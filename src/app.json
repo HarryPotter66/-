@@ -2,7 +2,9 @@
   "pages": [
     "pages/index/main",
     "pages/logs/main",
-    "pages/counter/main"
+    "pages/counter/main",
+    "pages/newpagex/main"
+
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -24,6 +26,12 @@
     }, {
       "text": "订单",
       "pagePath": "pages/logs/main",
+      "iconPath": "static/tabs/orders.png",
+      "selectedIconPath": "static/tabs/orders-active.png"
+    },
+    {
+      "text": "...",
+      "pagePath": "pages/newpagex/main",
       "iconPath": "static/tabs/orders.png",
       "selectedIconPath": "static/tabs/orders-active.png"
     }],
