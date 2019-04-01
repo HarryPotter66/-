@@ -19,21 +19,21 @@
     "borderStyle": "white",
 
     "list": [{
-      "text": "首页",
+      "text": "音乐大赏",
       "pagePath": "pages/index/main",
-      "iconPath": "static/tabs/home.png",
-      "selectedIconPath": "static/tabs/home-active.png"
+      "iconPath": "static/tabs/music.png",
+      "selectedIconPath": "static/tabs/music-active.png"
     }, {
-      "text": "订单",
+      "text": "交友",
       "pagePath": "pages/logs/main",
-      "iconPath": "static/tabs/orders.png",
-      "selectedIconPath": "static/tabs/orders-active.png"
+      "iconPath": "static/tabs/friend.png",
+      "selectedIconPath": "static/tabs/friend-active.png"
     },
     {
-      "text": "...",
+      "text": "我的",
       "pagePath": "pages/newpagex/main",
-      "iconPath": "static/tabs/orders.png",
-      "selectedIconPath": "static/tabs/orders-active.png"
+      "iconPath": "static/tabs/mine.png",
+      "selectedIconPath": "static/tabs/mine-active.png"
     }],
 
     "items": [{
