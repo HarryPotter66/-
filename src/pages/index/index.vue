@@ -1,6 +1,13 @@
 <template>
   <div @click="clickHandle">
-
+  <i-notice-bar icon="systemprompt" loop>
+    {{notice}}举行音乐盛典
+    </i-notice-bar>
+   <i-grid i-class="no-border">
+    <i-grid-item v-for="item in grids" :key="item"  i-class="no-border">
+     <i-grid-lable>{{item}}</i-grid-lable>
+    </i-grid-item>
+   </i-grid>
     <div class="userinfo" @click="bindViewTap">
       <img class="userinfo-avatar" v-if="userInfo.avatarUrl" :src="userInfo.avatarUrl" background-size="cover" />
       <img class="userinfo-avatar" src="/static/images/user.png" background-size="cover" />
@@ -16,14 +23,8 @@
       </div>
     </div>
 
-    <form class="form-container">
-      <input type="text" class="form-control" :value="motto" placeholder="v-model" />
-      <input type="text" class="form-control" v-model="motto" placeholder="v-model" />
-      <input type="text" class="form-control" v-model.lazy="motto" placeholder="v-model.lazy" />
-    </form>
-
-    <a href="/pages/counter/main" class="counter">去往Vuex示例页面</a>
-
+   
+    
     <div class="all">
         <div class="left">
         </div>
@@ -39,14 +40,10 @@ import card from '@/components/card'
 export default {
   data () {
     return {
-      motto: 'Hello miniprograme',
-      userInfo: {
-        nickName: 'mpvue',
-        avatarUrl: 'http://mpvue.com/assets/logo.png'
-      }
+      notice: '2019年4月3日',
+      grids: ['摇滚', '爵士', '古典', '流行', '民谣']
     }
   },
-
   components: {
     card
   },
