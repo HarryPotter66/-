@@ -11,27 +11,27 @@
    </i-grid>
     <i-panel title="也许你想了解的音乐知识">
       <view class="top-padding">
-      <i-card title="良品铺子" extra="零食" thumb="cloud://hahaha-4f10fd.6861-hahaha-4f10fd/music.png">
-        <view slot="content">好多不错的零食</view>
-        <view slot="footer">后街1-22</view>
+      <i-card title="五线谱" extra="doremi" thumb="cloud://hahaha-4f10fd.6861-hahaha-4f10fd/music.png">
+        <view slot="content"></view>
+        <view slot="footer">what is rules in chrom？</view>
       </i-card>
       <view class="top-padding"></view>
-      <i-card title="卡片标题" i-class="top-padding" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+      <i-card title="卡片标题" i-class="top-padding" extra="额外内容" thumb="cloud://hahaha-4f10fd.6861-hahaha-4f10fd/music.png">
         <view slot="content">内容不错</view>
         <view slot="footer">尾部内容</view>
       </i-card>
       <view class="top-padding"></view>
-      <i-card title="卡片标题" i-class="top-padding" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+      <i-card title="卡片标题" i-class="top-padding" extra="额外内容" thumb="cloud://hahaha-4f10fd.6861-hahaha-4f10fd/music.png">
         <view slot="content">内容不错</view>
         <view slot="footer">尾部内容</view>
       </i-card>
       <view class="top-padding"></view>
-      <i-card title="卡片标题" i-class="top-padding" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+      <i-card title="卡片标题" i-class="top-padding" extra="额外内容" thumb="cloud://hahaha-4f10fd.6861-hahaha-4f10fd/music.png">
         <view slot="content">内容不错</view>
         <view slot="footer">尾部内容</view>
       </i-card>
       <view class="top-padding"></view>
-      <i-card title="卡片标题" i-class="top-padding" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+      <i-card title="卡片标题" i-class="top-padding" extra="额外内容" thumb="cloud://hahaha-4f10fd.6861-hahaha-4f10fd/music.png">
         <view slot="content">内容不错</view>
         <view slot="footer">尾部内容</view>
       </i-card>
