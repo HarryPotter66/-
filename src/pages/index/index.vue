@@ -8,7 +8,7 @@
      <i-grid-lable>{{item}}</i-grid-lable>
     </i-grid-item>
    </i-grid>
-    <i-panel title="也许你想了解的音乐知识">
+    <i-panel title="也许你想了解音乐知识">
       <view class="top-padding">
        
       <i-card title="五线谱" extra="doremi" thumb="cloud://hahaha-4f10fd.6861-hahaha-4f10fd/43061ae0e513449be36cec6b7c70f1cb.jpg">
