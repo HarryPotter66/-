@@ -3,8 +3,8 @@
     "pages/index/main",
     "pages/logs/main",
     "pages/counter/main",
-    "pages/newpagex/main"
-
+    "pages/me/main",
+    "pages/book/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -28,10 +28,15 @@
       "pagePath": "pages/logs/main",
       "iconPath": "static/tabs/friend-active.png",
       "selectedIconPath": "static/tabs/friend.png"
+    },{
+      "text": "墨香客栈",
+      "pagePath": "pages/book/main",
+      "iconPath": "static/tabs/friend-active.png",
+      "selectedIconPath": "static/tabs/friend.png"
     },
     {
       "text": "我的",
-      "pagePath": "pages/newpagex/main",
+      "pagePath": "pages/me/main",
       "iconPath": "static/tabs/mine-active.png",
       "selectedIconPath": "static/tabs/mine.png"
     }],

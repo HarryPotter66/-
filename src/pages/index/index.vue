@@ -3,6 +3,13 @@
   <i-notice-bar icon="systemprompt" loop>
     {{notice}}举行音乐盛典
       </i-notice-bar>
+    <swiper v-if="imgUrls.length > 0" indidator-dots="imgUrls.length > 1" >
+      <block v-for="(item, index) in imgUrls" :key="index" >
+        <swiper-item>
+          <image :src="item" mode="scaleToFill,widthFix" ></image>
+        </swiper-item>
+      </block>
+    </swiper>
     <i-grid i-class="no-border">
      <i-grid-item i-class="no-border">
         <i-grid-icon>
@@ -62,6 +69,12 @@ import card from '@/components/card'
 export default {
   data () {
     return {
+      index: [],
+      imgUrls: [
+        'cloud://hahaha-4f10fd.6861-hahaha-4f10fd/saxophone-546303_640.jpg',
+        'cloud://hahaha-4f10fd.6861-hahaha-4f10fd/music-3507317_640.jpg',
+        'cloud://hahaha-4f10fd.6861-hahaha-4f10fd/music-1283851_640.jpg'
+      ],
       userInfo: {
         nickName: 'mpvue',
         avatarUrl: 'cloud://hahaha-4f10fd.6861-hahaha-4f10fd/6a2c8d019b4f7f0ced93b265d1af2158.gif'
