@@ -13,19 +13,19 @@
     <i-grid i-class="no-border">
      <i-grid-item i-class="no-border">
         <i-grid-icon>
-            <image src="/static/images/dancer.png" />
+            <image src="/static/images/dancer.png" @click="jump1"/>
         </i-grid-icon>
         <i-grid-label>劲爆舞曲</i-grid-label>
     </i-grid-item>
       <i-grid-item i-class="no-border">
         <i-grid-icon>
-            <image src="/static/images/radio.png" />
+            <image src="/static/images/radio.png" @click="jump2"/>
         </i-grid-icon>
         <i-grid-label>经典老曲儿</i-grid-label>
     </i-grid-item>
     <i-grid-item i-class="no-border">
         <i-grid-icon>
-            <image src="/static/images/symbol.png" />
+            <image src="/static/images/symbol.png" @click="jump3"/>
         </i-grid-icon>
         <i-grid-label>流行音乐</i-grid-label>
      </i-grid-item>
@@ -90,6 +90,21 @@ export default {
   },
 
   methods: {
+    jump1(){
+       wx.navigateTo({
+          url: '/pages/dancer/main'
+        })
+    },
+    jump2(){
+       wx.navigateTo({
+          url: '/pages/radio/main'
+        })
+    },
+    jump3(){
+       wx.navigateTo({
+          url: '/pages/symbol/main'
+        })
+    },
     bindViewTap () {
       const url = '../logs/main'
       if (mpvuePlatform === 'wx') {

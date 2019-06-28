@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "劲爆舞曲",
+        "usingComponents": {
+            "i-avatar": "../../../static/dist/avatar/index",
+            "i-button": "../../../static/dist/button/index"
+    }
+}

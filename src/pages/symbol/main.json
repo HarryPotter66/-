@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "流行音乐",
+        "usingComponents": {
+            "i-avatar": "../../../static/dist/avatar/index",
+            "i-button": "../../../static/dist/button/index"
+    }
+}

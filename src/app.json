@@ -3,13 +3,15 @@
     "pages/index/main",
     "pages/counter/main",
     "pages/me/main",
-    "pages/book/main"
-
+    "pages/book/main",
+    "pages/dancer/main",
+    "pages/radio/main",
+    "pages/symbol/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "乐天地",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
