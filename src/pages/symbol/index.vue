@@ -1,103 +1,59 @@
 <template>
   <div>
-      <view class="userinfo">
-      <view class="userinfo-avatar">
-      <open-data type="userAvatarUrl"></open-data>
-      </view>
-      <open-data type="userNickName"></open-data>
-      </view>
-          <div class="i-input">用户名：<input type="text" placeholder="请输入用户名" v-model="username"></div>
-          <div class="i-input">密码：<input type="text" placeholder="请输入密码" v-model="userpassword"></div>
-      
-      <i-button i-class="btn" @click="toHome" type="ghost" shape="circle">进入</i-button>
+      <audio :poster="poster" :name="name" :author="author" :src="src" id="myAudio" controls loop></audio>
+      <div class="blank"></div>
+      <audio :poster="poster2" :name="name2" :author="author2" :src="src2" id="myAudio2" controls loop></audio>
+       <div class="blank"></div>
+      <audio :poster="poster3" :name="name3" :author="author3" :src="src3" id="myAudio3" controls loop></audio>
     </div>
 </template>
 
 <script>
-  
+
 
   export default {
-   
+    onLoad(){
+      this.audioCtx = wx.createAudioContext('myAudio')
+    },
     data() {
       return {
-        username: "",
-        userpassword: "",
-      }
-    },
-    components: {
-        
+         poster: "http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000",
+         name: "此时此刻",
+         author: "许巍",
+         src: "http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E06DCBDC9AB7C49FD713D632D313AC4858BACB8DDD29067D3C601481D36E62053BF8DFEAF74C0A5CCFADD6471160CAF3E6A&fromtag=46",
+         poster2: "",
+         name2: "",
+         author2: "",
+         src2: "",
+         poster3: "",
+         name3: "",
+         author3: "",
+         src3: ""
+        }
     },
     methods: {
-    toHome(){
-      if(this.username=='admin'&&this.userpassword=='123'){
-          wx.switchTab({
-          url: '/pages/index/main'
-        })
-      }else{
-        wx.showToast({
-            title: '用户名或密码错误',
-            icon: 'none',
-            duration: 2000
-        })
-      }
-    },
-   
+      audioPlay(){
+        this.audioCtx.play()
+      },
+      audioPause(){
+        this.audioCtx.pause()
+      },
+      audio14(){
+        this.audioCtx.seek(14)
+      },
+      audioStart(){
+         this.audioCtx.seek(0)
+      },
     }
   }
 
 </script>
 
 <style scoped>
-    div >>> .i-input {
-      padding:7px 15px;
-      color:#495060;
-      position:relative;
-      padding:12px 15px;
-      display:flex;
-      background:#fff;
-      align-items:center;
-      line-height:1.4;
-      font-size:38rpx;
-      overflow:hidden;
-
-    }
-   div >>> ._i-icon{
-     margin-left:30px;
-   }
-   div >>> .btn{
-     width:85%;
-     margin:60px auto;
-     color:#80848f
-   }
-
-   div >>> .container1{
-     background-color:#f8f8f9;
-   }
- 
-  .userinfo {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-  }
-
-  .userinfo-avatar {
-    width: 128rpx;
-    height: 128rpx;
-    margin-top: 10rpx;
-    border-radius: 50%;
-    clip-path: circle(64rpx at center);
-  }
-
-  .userinfo-nickname {
-    color: #fff;
-    padding: 5px;
-  }
-
-  .weui-footer navigator span {
-    text-decoration: underline;
-  }
-
+.blank{
+  border:0px;
+  width:100%;
+  height:10px;
+}
 </style>
 

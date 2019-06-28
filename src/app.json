@@ -6,7 +6,9 @@
     "pages/book/main",
     "pages/dancer/main",
     "pages/radio/main",
-    "pages/symbol/main"
+    "pages/jazz/main",
+    "pages/chrom/main"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",

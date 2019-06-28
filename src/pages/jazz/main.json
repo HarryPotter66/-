@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "爵士",
+    "usingComponents": {
+            "i-avatar": "../../../static/dist/avatar/index",
+            "i-button": "../../../static/dist/button/index",
+            "i-divider": "../../../static/dist/divider/index"
+    }
+}

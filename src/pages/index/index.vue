@@ -33,31 +33,16 @@
      <i-panel title="也许你想了解音乐知识">
       <view class="top-padding">
        
-      <i-card title="五线谱" extra="doremi" thumb="cloud://hahaha-4f10fd.6861-hahaha-4f10fd/43061ae0e513449be36cec6b7c70f1cb.jpg">
+      <i-card title="五线谱" extra="doremi" thumb="cloud://hahaha-4f10fd.6861-hahaha-4f10fd/43061ae0e513449be36cec6b7c70f1cb.jpg" @click="jump4">
         <view slot="content"></view>
         <view slot="footer">what is rules in chrom？</view>
       </i-card>
     
-      <i-card title="davekoz的经典欣赏" i-class="top-padding" extra=" " thumb="cloud://hahaha-4f10fd.6861-hahaha-4f10fd/untitled.png">
+      <i-card title="davekoz的经典欣赏" i-class="top-padding" extra="爵士" thumb="cloud://hahaha-4f10fd.6861-hahaha-4f10fd/untitled.png" @click="jump5">
         <view slot="content">畅游爵士古典的海洋</view>
         <view slot="footer"></view>
       </i-card>
       <view class="top-padding"></view>
-      <i-card title="卡片标题" i-class="top-padding" extra="额外内容" thumb="cloud://hahaha-4f10fd.6861-hahaha-4f10fd/music.png">
-        <view slot="content">内容不错</view>
-        <view slot="footer">尾部内容</view>
-      </i-card>
-      <view class="top-padding"></view>
-      <i-card title="卡片标题" i-class="top-padding" extra="额外内容" thumb="cloud://hahaha-4f10fd.6861-hahaha-4f10fd/music.png">
-        <view slot="content">内容不错</view>
-        <view slot="footer">尾部内容</view>
-      </i-card>
-      <view class="top-padding"></view>
-      <i-card title="卡片标题" i-class="top-padding" extra="额外内容" thumb="cloud://hahaha-4f10fd.6861-hahaha-4f10fd/music.png">
-        <view slot="content">内容不错</view>
-        <view slot="footer">尾部内容</view>
-      </i-card>
-       <view class="top-padding"></view>
     </view>
     </i-panel>
   </div>
@@ -105,20 +90,17 @@ export default {
           url: '/pages/symbol/main'
         })
     },
-    bindViewTap () {
-      const url = '../logs/main'
-      if (mpvuePlatform === 'wx') {
-        mpvue.switchTab({ url })
-      } else {
-        mpvue.navigateTo({ url })
-      }
+    jump4(){
+      wx.navigateTo({
+          url: '/pages/chrom/main'
+        })
     },
-    clickHandle (ev) {
-      console.log('clickHandle:', ev)
-      // throw {message: 'custom test'}
-    }
+    jump5(){
+      wx.navigateTo({
+          url: '/pages/jazz/main'
+        })
+    },
   },
-
   created () {
     const db = wx.cloud.database({ env: 'hahaha-4f10fd' })
     db.collection('know').get().then(

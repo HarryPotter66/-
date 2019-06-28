@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText": "交友"
+  "navigationBarTitleText": "交友",
+  "usingComponents": {
+    "i-card": "../../../static/dist/card/index"
+}
 }
