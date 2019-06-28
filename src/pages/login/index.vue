@@ -67,7 +67,7 @@
    div >>> .btn{
      width:85%;
      margin:60px auto;
-     color:#80848f
+     color:#f76a24
    }
 
    div >>> .container1{
