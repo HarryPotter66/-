@@ -69,6 +69,7 @@ import card from '@/components/card'
 export default {
   data () {
     return {
+      
       index: [],
       imgUrls: [
         'cloud://hahaha-4f10fd.6861-hahaha-4f10fd/saxophone-546303_640.jpg',
